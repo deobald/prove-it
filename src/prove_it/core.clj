@@ -29,3 +29,9 @@
         x (+ 2 (factorial (+ n 1)))]
     (for [i (range 0 n)]
       (+ x i))))
+
+(defn intro-5 []
+  (let [perfect (fn [n] (* (exp 2 (- n 1))
+                          (- (exp 2 n) 1)))]
+    (map perfect [2 3 5 7])))
+
